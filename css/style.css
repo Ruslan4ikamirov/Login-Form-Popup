@@ -1,0 +1,168 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #201f21;
+}
+.container .input-box {
+  width: 500px;
+}
+.container .input-box form {
+  width: 100%;
+  position: relative;
+  border: 3px solid #ccc;
+  padding: 20px 30px;
+  border-radius: 20px;
+  outline: none;
+}
+.container .input-box form h1 {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.container .input-box form input {
+  width: 100%;
+  height: 60px;
+  padding: 0 20px;
+  border: 2px solid #ccc;
+  color: #fff;
+  outline: none;
+  background: transparent;
+  border-radius: 5px;
+  font-size: 14px;
+}
+.container .input-box form input::-moz-placeholder {
+  font-size: 14px;
+  font-weight: 300;
+  color: #fff;
+}
+.container .input-box form input::placeholder {
+  font-size: 14px;
+  font-weight: 300;
+  color: #fff;
+}
+.container .input-box form #name {
+  margin-bottom: 20px;
+}
+.container .input-box form #surname {
+  margin-bottom: 20px;
+}
+.container .input-box form .password-field {
+  position: relative;
+}
+.container .input-box form .password-field #password {
+  margin-bottom: 10px;
+  position: relative;
+}
+.container .input-box form .password-field .eye i {
+  font-size: 20px;
+  color: #fff;
+  position: absolute;
+  top: 23px;
+  right: 20px;
+  cursor: pointer;
+}
+.container .input-box form .password-field .required {
+  position: absolute;
+  color: red;
+  right: 60px;
+  top: 32%;
+  font-size: 12px;
+  display: none;
+  font-weight: 500;
+}
+.container .input-box form .name-field {
+  position: relative;
+}
+.container .input-box form .name-field span {
+  position: absolute;
+  color: red;
+  right: 10px;
+  top: 27%;
+  font-size: 12px;
+  display: none;
+  font-weight: 500;
+}
+.container .input-box form .surname-field {
+  position: relative;
+}
+.container .input-box form .surname-field span {
+  position: absolute;
+  color: red;
+  right: 10px;
+  top: 27%;
+  font-size: 12px;
+  display: none;
+  font-weight: 500;
+}
+.container .input-box form #message {
+  color: #fff;
+  font-size: 15px;
+  display: none;
+  margin-bottom: 5px;
+}
+.container .input-box form .button-field {
+  padding: 0 100px;
+}
+.container .input-box form .button-field button {
+  width: 100%;
+  padding: 10px 15px;
+  font-size: 17px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+}
+.container .popup {
+  width: 400px;
+  background: #fff;
+  border-radius: 6px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.1);
+  text-align: center;
+  padding: 0 30px 30px;
+  color: #333;
+  visibility: hidden;
+  transition: transform 0.4s, top 0.4s;
+}
+.container .popup img {
+  width: 100px;
+  margin-top: -50px;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.container .popup h2 {
+  font-size: 38px;
+  font-weight: 500;
+  margin: 30px 0 10px;
+}
+.container .popup button {
+  width: 100%;
+  margin-top: 50px;
+  padding: 10px 0;
+  background: #6fd649;
+  color: #fff;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+.container .open-popup {
+  visibility: visible;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(1);
+}
